@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "mode": "codex-supervised",
+  "product": "Multisite Manager",
+  "phase": "setup_guided_preview_delivered",
+  "tasks": [
+    {
+      "id": "BOOTSTRAP",
+      "title": "Preparare e verificare ambiente e workflow",
+      "status": "done",
+      "evidence": [
+        "reports/bootstrap.md",
+        "reports/check.json",
+        "reports/http.json"
+      ]
+    },
+    {
+      "id": "BRIEF",
+      "title": "Redigere il brief iniziale del plugin Multisite",
+      "status": "done",
+      "evidence": [
+        "brief/requirements.md"
+      ]
+    },
+    {
+      "id": "FEASIBILITY",
+      "title": "Verificare fattibilità del setup assistito",
+      "status": "done",
+      "evidence": [
+        "reports/multisite-feasibility.md",
+        "reports/feasibility-probe.json"
+      ]
+    },
+    {
+      "id": "DIAGNOSTIC",
+      "title": "Dashboard diagnostica e guida esportabile",
+      "status": "done",
+      "evidence": [
+        "reports/diagnostic-delivery.md",
+        "reports/check.json",
+        "reports/php-matrix.json",
+        "reports/http-check.json",
+        "reports/package-verification.json"
+      ]
+    },
+    {
+      "id": "SETUP",
+      "title": "Wizard guidato e collaudo conversione su fixture isolata",
+      "status": "done",
+      "evidence": [
+        "reports/setup-delivery.md",
+        "reports/setup-native.json",
+        "reports/php-matrix.json",
+        "docs/setup-contract.md"
+      ]
+    },
+    {
+      "id": "SITE_MANAGEMENT",
+      "title": "Interfaccia dedicata per elenco, creazione e gestione siti della rete",
+      "status": "pending",
+      "evidence": []
+    }
+  ],
+  "briefStatus": "draft_for_review"
+}

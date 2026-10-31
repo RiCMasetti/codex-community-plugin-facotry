@@ -1,0 +1,32 @@
+node_modules/
+.env
+.env.*
+!.env.example
+.wp-env.override.json
+dist/
+.DS_Store
+._*
+
+# Private local fixtures and generated evidence (keep on disk)
+tests/manual-fixture/*.mjs
+reports/*.json
+reports/*.png
+# Credentials, runtime data and backups
+.wp-env.*.override.json
+*.pem
+*.key
+*.p12
+*.pfx
+*.sql
+*.sql.gz
+*.sqlite
+*.sqlite3
+*.log
+*.bak
+*.backup
+*.zip
+wp-config.php
+auth.json
+.npmrc
+backups/
+coverage/

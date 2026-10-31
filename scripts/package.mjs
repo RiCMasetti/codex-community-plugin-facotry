@@ -1,0 +1,12 @@
+import {spawnSync} from 'node:child_process';
+import {mkdirSync,readFileSync,existsSync} from 'node:fs';
+import path from 'node:path';
+const slug='multisite-manager';
+const source=readFileSync(`plugins/${slug}/${slug}.php`,'utf8');
+const version=source.match(/Version:\s*([\d.]+)/)?.[1];
+if(!version)throw Error('Versione plugin non trovata');
+mkdirSync('dist',{recursive:true});
+const out=path.resolve(`dist/${slug}-${version}-${Date.now()}.zip`);
+const r=spawnSync('zip',['-r',out,slug,'-x','*/._*','*/.DS_Store'],{cwd:'plugins',stdio:'inherit'});
+if(r.status!==0||!existsSync(out))process.exit(1);
+console.log(out);
