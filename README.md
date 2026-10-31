@@ -65,3 +65,7 @@ Le credenziali `admin / password` sono i valori demo di wp-env e servono solo pe
 ## Licenza
 
 GPL-2.0-or-later: GNU General Public License, versione 2 o, a scelta, qualsiasi versione successiva. Vedere [LICENSE](LICENSE). I due plugin includono anche una copia della licenza nei propri sorgenti. Le dipendenze di terzi mantengono le rispettive licenze.
+
+## Resoconto del progetto
+
+[Leggi il resoconto PDF](docs/resoconto-codex-plugin-factory.pdf): metodo, contributo dei subagent, risultati, analisi di prodotto e dati disponibili sui costi. Documento del 31 ottobre 2026; i saldi riportati sono storici e riferiti all’intero account, non al solo progetto.
